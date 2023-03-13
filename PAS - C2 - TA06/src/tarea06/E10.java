@@ -40,7 +40,7 @@ public class E10 {
 	public static void rellenarArrayNumPrimos(int array[], int min, int max) {
 		int recorrerLista = 0, numPrimo = 0;
 		while (recorrerLista < array.length) {
-			numPrimo = ((int)Math.floor(Math.random()*(min-max)+max));
+			numPrimo = (int) ((Math.random() * ((max - min) + 1)) + min);
 			if (comprobarPrimo(numPrimo)) {
 				array[recorrerLista] = numPrimo;
 				recorrerLista++;
